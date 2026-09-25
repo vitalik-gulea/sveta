@@ -20,8 +20,9 @@ const linkMotion = {
 const navLinks = [
   { href: "#home", key: "nav.home" as const },
   { href: "#about", key: "nav.about" as const },
-  { href: "#about", key: "nav.books" as const },
-  { href: "#about", key: "nav.services" as const },
+  { href: "#books", key: "nav.books" as const },
+  { href: "#plays", key: "nav.plays" as const },
+  { href: "#services", key: "nav.services" as const },
 ];
 
 export default function Nav() {

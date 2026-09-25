@@ -7,6 +7,7 @@ export function detectLocaleFromAcceptLanguage(
   for (const part of header.split(",")) {
     const code = part.trim().split(";")[0]?.toLowerCase() ?? "";
     if (code.startsWith("ru")) return "ru";
+    if (code.startsWith("ro")) return "ro";
     if (code.startsWith("en")) return "en";
   }
   return "en";

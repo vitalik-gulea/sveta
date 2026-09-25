@@ -1,19 +1,10 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  startTransition,
-} from "react";
-import { LOCALE_STORAGE_KEY } from "@/lib/i18n/config";
+import { usePathname } from "next/navigation";
+import { createContext, useCallback, useContext, useMemo } from "react";
 import { setLocaleCookieClient } from "@/lib/i18n/set-locale-cookie-client";
 import type { Locale, MessageKey } from "./dictionaries";
-import { dictionaries } from "./dictionaries";
+import { dictionaries, locales } from "./dictionaries";
 
 type LocaleContextValue = {
   locale: Locale;
@@ -24,12 +15,6 @@ type LocaleContextValue = {
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
-function persistClient(locale: Locale) {
-  localStorage.setItem(LOCALE_STORAGE_KEY, locale);
-  setLocaleCookieClient(locale);
-  document.documentElement.lang = locale === "ru" ? "ru" : "en";
-}
-
 export function LocaleProvider({
   children,
   initialLocale,
@@ -37,43 +22,26 @@ export function LocaleProvider({
   children: React.ReactNode;
   initialLocale: Locale;
 }) {
-  const router = useRouter();
-  const [locale, setLocaleState] = useState<Locale>(initialLocale);
+  const pathname = usePathname();
+  const locale = initialLocale;
 
-  const refresh = useCallback(() => {
-    startTransition(() => router.refresh());
-  }, [router]);
-
-  const setLocale = useCallback(
+  // A full navigation (not router.push) is used deliberately: the locale
+  // segment is owned by the root layout itself, so a client-side transition
+  // would re-render <html>/<body> in React, which cannot safely re-render
+  // the inline JSON-LD <Script> tag (React only executes it on first paint).
+  const navigateToLocale = useCallback(
     (next: Locale) => {
-      setLocaleState(next);
-      persistClient(next);
-      refresh();
+      setLocaleCookieClient(next);
+      const rest = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "");
+      window.location.href = `/${next}${rest}`;
     },
-    [refresh],
+    [pathname],
   );
 
   const toggleLocale = useCallback(() => {
-    setLocaleState((prev) => {
-      const next = prev === "ru" ? "en" : "ru";
-      persistClient(next);
-      return next;
-    });
-    refresh();
-  }, [refresh]);
-
-  useEffect(() => {
-    const stored = localStorage.getItem(LOCALE_STORAGE_KEY) as Locale | null;
-    if (stored === "en" || stored === "ru") {
-      if (stored !== initialLocale) {
-        setLocaleState(stored);
-        persistClient(stored);
-        refresh();
-      }
-    } else {
-      localStorage.setItem(LOCALE_STORAGE_KEY, initialLocale);
-    }
-  }, [initialLocale, refresh]);
+    const next = locales[(locales.indexOf(locale) + 1) % locales.length];
+    navigateToLocale(next);
+  }, [locale, navigateToLocale]);
 
   const t = useCallback(
     (key: MessageKey) => dictionaries[locale][key] ?? key,
@@ -81,8 +49,8 @@ export function LocaleProvider({
   );
 
   const value = useMemo(
-    () => ({ locale, setLocale, toggleLocale, t }),
-    [locale, setLocale, toggleLocale, t],
+    () => ({ locale, setLocale: navigateToLocale, toggleLocale, t }),
+    [locale, navigateToLocale, toggleLocale, t],
   );
 
   return (

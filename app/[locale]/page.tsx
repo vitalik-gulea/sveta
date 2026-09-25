@@ -1,4 +1,5 @@
 import { HomeSections } from "@/components/home/HomeSections";
+import { Footer } from "@/components/layout/Footer";
 import Nav from "@/components/nav/Nav";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
       <Nav />
       <HomeSections />
+      <Footer />
     </div>
   );
 }

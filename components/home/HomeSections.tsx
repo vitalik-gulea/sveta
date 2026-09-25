@@ -1,11 +1,10 @@
-"use client";
-
+import { About } from "@/components/home/About";
+import { Books } from "@/components/home/Books";
 import { Hero } from "@/components/home/Hero";
-import { useLocale } from "@/lib/i18n/locale-provider";
+import { Plays } from "@/components/home/Plays";
+import { Services } from "@/components/home/Services";
 
 export function HomeSections() {
-  const { t } = useLocale();
-
   return (
     <main>
       <section id="home" className="scroll-mt-14 sm:scroll-mt-16">
@@ -13,11 +12,24 @@ export function HomeSections() {
       </section>
       <section
         id="about"
-        className="min-h-screen scroll-mt-14 border-t border-border/60 px-4 py-16 sm:scroll-mt-16 sm:px-6 sm:py-20 md:px-12 md:py-24"
+        className="scroll-mt-14 border-t border-border/60 bg-card sm:scroll-mt-16"
       >
-        <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
-          {t("home.sectionAbout")}
-        </p>
+        <About />
+      </section>
+      <section id="books" className="scroll-mt-14 sm:scroll-mt-16">
+        <Books />
+      </section>
+      <section
+        id="plays"
+        className="scroll-mt-14 border-t border-border/60 bg-card sm:scroll-mt-16"
+      >
+        <Plays />
+      </section>
+      <section
+        id="services"
+        className="scroll-mt-14 border-t border-border/60 sm:scroll-mt-16"
+      >
+        <Services />
       </section>
     </main>
   );
