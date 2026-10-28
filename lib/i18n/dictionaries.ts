@@ -37,6 +37,10 @@ export type MessageKey =
   | "books.item2.description"
   | "books.item3.title"
   | "books.item3.description"
+  | "books.item4.title"
+  | "books.item4.description"
+  | "books.item5.title"
+  | "books.item5.description"
   | "plays.heading"
   | "plays.subtitle"
   | "plays.item1.title"
@@ -89,19 +93,25 @@ const en: Record<MessageKey, string> = {
   "theme.ariaToggle": "Toggle color theme",
   "about.heading": "About Me",
   "about.bio":
-    "I write books for children and teenagers and create scripts for Christmas theatrical productions performed on church stages. My stories are full of warmth, faith, and characters who find light even in the hardest moments.",
-  "about.imageAlt": "Portrait of the author at a writing desk",
+    "I am a mother of three. I live in sunny Moldova and write Christian books for children and teenagers. I create captivating stories that draw readers in, inspire them, and help them discover important truths. I also write stories for children's camps and scripts for Christmas productions for the church. I sing in the church choir and lead the children's page during Sunday services. I believe that through books we can sow seeds of faith, love, and kindness in children's hearts.",
+  "about.imageAlt": "Portrait of Svetlana Mokan",
   "books.heading": "Published Books",
   "books.subtitle": "Christian fiction for children and teenagers",
   "books.item1.title": "Not Like Everyone Else",
   "books.item1.description":
-    "Ten-year-old Eduard has everything money can buy — except the warmth of the people he loves. Then a blind girl teaches him to see with his heart what everyone with sight has missed.",
+    "A large castle, expensive toys, the best teachers… Ten-year-old Eduard has everything anyone could dream of. But behind the high castle walls he desperately lacks the love of those closest to him. He is confined to a wheelchair, his mother barely notices him, and a luxurious life cannot warm a heart that feels alone. Everything changes the day a kind nanny brings her daughter to the castle. The girl cannot see the world with her eyes. And yet she seems to be the first to notice what no one else has: a lonely boy who longs to be loved. Eduard will have to learn what true wealth is, why someone with closed eyes can sometimes see far more than others, and where to find the One who never leaves.",
   "books.item2.title": "Run Without Looking Back",
   "books.item2.description":
-    "A summer at grandmother's turns into a real adventure: a secret cabin in the woods, new friends, and dangers that test the strength of friendship.",
+    "Summer. Two sisters. A mysterious forest. A holiday at grandmother's seemed ordinary — until one night the girls meet the local children and hear about a mysterious cabin whose secret no one has been able to solve. From that moment a real adventure begins: dangers, unexpected secrets, old scores, and jealousy that can destroy even a strong friendship. What does the cabin in the woods hide? Whom can you trust? And why do you sometimes have to run without looking back?",
   "books.item3.title": "Unsafe Network",
   "books.item3.description":
-    "An online game that felt like harmless fun slowly starts to run Roma's life. A week at a Christian teen camp, without phones, helps him finally face the truth about himself.",
+    "Roma treats an online game as ordinary entertainment, but little by little it starts to run his life. Lies, skipped classes, stealing, arguments, and trouble at home lead to him having to leave his familiar virtual world for a week and go to a Christian teen camp — without phones or tablets. There, for the first time, he has to look honestly at himself and at what he has done.",
+  "books.item4.title": "22 Stories",
+  "books.item4.description":
+    "22 kind, instructive, and engaging stories for children.\nIn this collection you will find:\n• winter and Christmas stories;\n• summer tales;\n• stories about birthdays, about mom, about dad, and about family values;\n• stories about friendship, choices, honesty, courage, and God's care;\n• stories about outstanding Christian figures, written in simple language children can understand. They gather the most interesting facts from the lives of people who trusted God and left a bright mark on history.\nSome of the stories are based on real events!\nThe collection is well suited for family reading, Sunday schools, children's classes, and anyone who wants to introduce children to Christian values through engaging stories.",
+  "books.item5.title": "Born in Captivity",
+  "books.item5.description":
+    "This book is based on real events. Svetlana Firsova was born in prison, and her childhood was spent amid poverty, violence, and alcoholism. Later came an orphanage, a foster family, and difficult trials that left a deep mark on her heart. It seemed that such a past could determine her fate forever, but God changed her life step by step. Svetlana tells how she learned to live with pain, to forgive, to trust God, and to find the strength to live again. This book is a personal testimony of God's love and faithfulness even in the hardest times. It reminds us that our past does not determine our future, and that with God, even after the heaviest trials, we can find hope, healing, and true freedom.",
   "plays.heading": "Christmas Productions",
   "plays.subtitle": "Stage scripts written for church Christmas performances",
   "plays.item1.title": "A Christmas Portrait",
@@ -165,19 +175,25 @@ const ru: Record<MessageKey, string> = {
   "theme.ariaToggle": "Переключить тему",
   "about.heading": "Обо мне",
   "about.bio":
-    "Я пишу книги для детей и подростков и создаю сценарии рождественских постановок, которые ставят на сцене в церквях. В моих историях — тепло, вера и герои, которые находят свет даже в самые трудные моменты.",
-  "about.imageAlt": "Портрет автора за письменным столом",
+    "Я мама троих детей. Живу в солнечной Молдове и пишу христианские книги для детей и подростков. Создаю захватывающие истории, которые увлекают читателей, вдохновляют и помогают открывать для себя важные истины. Также пишу рассказы для детских лагерей и сценарии рождественских постановок для церкви. Я пою в церковном хоре и веду детскую страничку во время воскресных служений. Верю, что через книги можно сеять в сердцах детей семена веры, любви и доброты.",
+  "about.imageAlt": "Портрет Светланы Мокан",
   "books.heading": "Опубликованные книги",
   "books.subtitle": "Христианская проза для детей и подростков",
   "books.item1.title": "«Не такие, как все»",
   "books.item1.description":
-    "У десятилетнего Эдуарда есть всё, о чём можно мечтать, — кроме тепла и любви близких. Пока однажды слепая девочка не научит его видеть сердцем то, чего не замечали зрячие.",
+    "Большой замок, дорогие игрушки, лучшие учителя… У десятилетнего Эдуарда есть все, о чем можно мечтать. Но за высокими стенами замка ему отчаянно не хватает любви близких. Он прикован к инвалидному креслу, мама почти не замечает его, а роскошная жизнь не может согреть сердце, которое чувствует себя одиноким. Но все меняется в тот день, когда добрая няня приводит в замок свою дочь. Девочка не видит этот мир глазами. Но, кажется, именно она первой замечает то, чего не замечал никто: одинокого мальчика, которому очень хочется быть любимым. Эдуарду предстоит узнать, что такое настоящее богатство, почему иногда человек с закрытыми глазами видит гораздо больше других и где искать Того, Кто никогда не оставляет.",
   "books.item2.title": "«Бежать без оглядки»",
   "books.item2.description":
-    "Летние каникулы у бабушки превращаются в настоящее приключение: тайная лесная хижина, новые друзья и опасности, которые проверяют крепость дружбы.",
+    "Лето. Две сестры. Таинственный лес. Казалось, каникулы у бабушки будут обычными, пока однажды ночью девочки не знакомятся с местной ребятней и не узнают о загадочной хижине, тайну которой никто не смог разгадать. С этого момента начинается настоящее приключение: опасности, неожиданные тайны, старые счеты и ревность, способная разрушить даже крепкую дружбу. Что скрывает лесная хижина? Кому можно доверять? И почему иногда нужно бежать без оглядки?",
   "books.item3.title": "«Небезопасная сеть»",
   "books.item3.description":
-    "Интернет-игра, казавшаяся просто развлечением, постепенно начинает управлять жизнью Ромы. Христианский подростковый лагерь без телефонов помогает ему увидеть правду о себе.",
+    "Рома воспринимает интернет-игру как обычное развлечение, но постепенно она начинает управлять его жизнью. Ложь, прогулы, воровство, ссоры и проблемы дома приводят к тому, что ему приходится на неделю оставить привычный виртуальный мир и отправиться в христианский подростковый лагерь — без телефонов и планшетов. Там он впервые сталкивается с необходимостью честно посмотреть на себя и свои поступки.",
+  "books.item4.title": "«22 рассказа»",
+  "books.item4.description":
+    "22 добрые, поучительные и увлекательные истории для детей.\nВ сборнике вы найдете:\n• зимние и рождественские рассказы;\n• летние истории;\n• рассказы о дне рождения, о маме, о папе и о семейных ценностях;\n• истории о дружбе, выборе, честности, смелости и Божьей заботе;\n• рассказы о выдающихся христианских личностях, написанные простым и понятным для детей языком. В них собраны самые интересные факты из жизни людей, которые доверяли Богу и оставили яркий след в истории.\nНекоторые рассказы основаны на реальных событиях!\nСборник подойдет для семейного чтения, воскресных школ, детских занятий и всех, кто хочет познакомить детей с христианскими ценностями через интересные истории.",
+  "books.item5.title": "«Рожденная в неволе»",
+  "books.item5.description":
+    "Это книга основана на реальных событиях. Светлана Фирсова родилась в тюрьме, а её детство прошло среди бедности, насилия и алкоголизма. Позже были детский дом, приёмная семья и непростые испытания, которые оставили глубокий след в её сердце. Казалось, что такое прошлое может навсегда определить её судьбу, но Бог шаг за шагом менял её жизнь. Светлана рассказывает о том, как училась справляться с болью, прощать, доверять Богу и снова находить силы жить. Эта книга — личное свидетельство о Божьей любви и верности даже в самые трудные времена. Она напоминает нам, что наше прошлое не определяет наше будущее и что с Богом даже после самых тяжёлых испытаний можно обрести надежду, исцеление и настоящую свободу.",
   "plays.heading": "Рождественские постановки",
   "plays.subtitle": "Сценарии для рождественских спектаклей на церковной сцене",
   "plays.item1.title": "«Рождественский портрет»",
@@ -241,19 +257,25 @@ const ro: Record<MessageKey, string> = {
   "theme.ariaToggle": "Comută tema culorilor",
   "about.heading": "Despre mine",
   "about.bio":
-    "Scriu cărți pentru copii și adolescenți și creez scenarii pentru piese de Crăciun puse în scenă în biserici. Poveștile mele sunt pline de căldură, credință și personaje care găsesc lumina chiar și în cele mai grele momente.",
-  "about.imageAlt": "Portretul autorului la biroul de scris",
+    "Sunt mama a trei copii. Locuiesc în însorita Moldovă și scriu cărți creștine pentru copii și adolescenți. Creez povești captivante care atrag cititorii, îi inspiră și îi ajută să descopere adevăruri importante. De asemenea, scriu povestiri pentru tabere de copii și scenarii de piese de Crăciun pentru biserică. Cânt în corul bisericii și conduc pagina copiilor în timpul slujbelor de duminică. Cred că prin cărți putem semăna în inimile copiilor semințe de credință, iubire și bunătate.",
+  "about.imageAlt": "Portretul Svetlanei Mokan",
   "books.heading": "Cărți publicate",
   "books.subtitle": "Proză creștină pentru copii și adolescenți",
   "books.item1.title": "„Nu ca toți ceilalți”",
   "books.item1.description":
-    "Eduard, în vârstă de zece ani, are tot ce și-ar putea dori — în afară de căldura celor dragi. Până când o fetiță nevăzătoare îl învață să vadă cu inima ceea ce nimeni altcineva nu observase.",
+    "Un castel mare, jucării scumpe, cei mai buni profesori… Eduard, în vârstă de zece ani, are tot ce și-ar putea dori. Dar în spatele zidurilor înalte ale castelului îi lipsește cu disperare iubirea celor apropiați. Este ținut pe un scaun cu rotile, mama abia îl observă, iar viața de lux nu poate încălzi o inimă care se simte singură. Totul se schimbă în ziua în care o dădacă bună își aduce fiica la castel. Fetița nu vede lumea cu ochii. Și totuși, pare să fie prima care observă ceea ce nimeni altcineva nu văzuse: un băiat singuratic care tânjește să fie iubit. Eduard va trebui să afle ce înseamnă adevărata bogăție, de ce uneori un om cu ochii închiși vede mult mai mult decât alții și unde să-L caute pe Cel care nu părăsește niciodată.",
   "books.item2.title": "„Fugi fără să privești înapoi”",
   "books.item2.description":
-    "Vacanța de vară la bunica se transformă într-o adevărată aventură: o cabană secretă în pădure, prieteni noi și pericole care pun la încercare o prietenie adevărată.",
+    "Vară. Două surori. O pădure misterioasă. Vacanța la bunica părea obișnuită, până când într-o noapte fetele îi cunosc pe copiii din sat și află despre o cabană tainică al cărei secret nimeni n-a putut să-l dezlege. Din acel moment începe o adevărată aventură: pericole, taine neașteptate, vechi răfuieli și gelozie capabilă să distrugă chiar și o prietenie puternică. Ce ascunde cabana din pădure? Cui poți avea încredere? Și de ce uneori trebuie să fugi fără să privești înapoi?",
   "books.item3.title": "„Rețea nesigură”",
   "books.item3.description":
-    "Un joc online care părea o simplă distracție începe treptat să-i controleze viața lui Roma. O săptămână la o tabără creștină pentru adolescenți, fără telefoane, îl ajută să înfrunte adevărul despre sine.",
+    "Roma tratează un joc online ca pe o distracție obișnuită, dar treptat acesta începe să-i controleze viața. Minciuni, chiul, furt, certuri și probleme acasă duc la faptul că trebuie să părăsească pentru o săptămână lumea lui virtuală familiară și să meargă la o tabără creștină pentru adolescenți — fără telefoane și tablete. Acolo, pentru prima dată, se confruntă cu nevoia de a se privi sincer pe sine și faptele sale.",
+  "books.item4.title": "„22 de povestiri”",
+  "books.item4.description":
+    "22 de povestiri bune, instructive și captivante pentru copii.\nÎn acest volum veți găsi:\n• povestiri de iarnă și de Crăciun;\n• istorii de vară;\n• povestiri despre ziua de naștere, despre mamă, despre tată și despre valorile familiei;\n• istorii despre prietenie, alegere, cinste, curaj și grija lui Dumnezeu;\n• povestiri despre personalități creștine de seamă, scrise într-un limbaj simplu și ușor de înțeles pentru copii. Ele adună cele mai interesante fapte din viața oamenilor care s-au încrezut în Dumnezeu și au lăsat o urmă luminoasă în istorie.\nUnele povestiri se bazează pe evenimente reale!\nVolumul se potrivește lecturii în familie, școlilor duminicale, activităților cu copiii și tuturor celor care vor să-i familiarizeze pe copii cu valorile creștine prin istorii captivante.",
+  "books.item5.title": "„Născută în captivitate”",
+  "books.item5.description":
+    "Această carte se bazează pe evenimente reale. Svetlana Firsova s-a născut în închisoare, iar copilăria ei a trecut printre sărăcie, violență și alcoolism. Mai târziu au urmat casa de copii, o familie de plasament și încercări grele care i-au lăsat o urmă adâncă în inimă. Părea că un astfel de trecut i-ar putea hotărî soarta pentru totdeauna, dar Dumnezeu i-a schimbat viața pas cu pas. Svetlana povestește cum a învățat să facă față durerii, să ierte, să se încreadă în Dumnezeu și să-și găsească din nou puterea de a trăi. Această carte este o mărturie personală despre dragostea și credincioșia lui Dumnezeu chiar și în cele mai grele vremuri. Ne amintește că trecutul nostru nu ne determină viitorul și că, împreună cu Dumnezeu, chiar și după cele mai grele încercări, putem găsi nădejde, vindecare și adevărata libertate.",
   "plays.heading": "Piese de Crăciun",
   "plays.subtitle": "Scenarii de teatru scrise pentru spectacole de Crăciun la biserică",
   "plays.item1.title": "„Un portret de Crăciun”",

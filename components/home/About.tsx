@@ -14,17 +14,15 @@ export function About() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-lg shadow-xl md:mx-0"
+        className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full md:mx-0"
       >
         <Image
           src="/images/about.jpg"
           alt={t("about.imageAlt")}
           fill
-          sizes="(min-width: 768px) 40vw, 90vw"
-          className="object-cover"
-          priority={false}
+          sizes="(min-width: 768px) 28rem, 90vw"
+          className="object-contain"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent to-primary/20" />
       </motion.div>
 
       <motion.div
