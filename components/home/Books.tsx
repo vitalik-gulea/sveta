@@ -55,10 +55,7 @@ export function Books() {
         <h2 className="mb-4 font-serif text-3xl font-bold text-foreground sm:text-4xl md:text-5xl">
           {t("books.heading")}
         </h2>
-        <div className="mx-auto mb-6 h-1 w-20 rounded-full bg-primary" />
-        <p className="text-base text-muted-foreground sm:text-lg">
-          {t("books.subtitle")}
-        </p>
+        <div className="mx-auto h-1 w-20 rounded-full bg-primary" />
       </motion.div>
 
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-8">

@@ -30,7 +30,6 @@ export type MessageKey =
   | "about.bio"
   | "about.imageAlt"
   | "books.heading"
-  | "books.subtitle"
   | "books.item1.title"
   | "books.item1.description"
   | "books.item2.title"
@@ -96,7 +95,6 @@ const en: Record<MessageKey, string> = {
     "I am a mother of three. I live in sunny Moldova and write Christian books for children and teenagers.\n\nI create captivating stories that draw readers in, inspire them, and help them discover important truths.\n\nI also write stories for children's camps and scripts for Christmas productions for the church.\n\nI sing in the church choir and lead the children's page during Sunday services. I believe that through books we can sow seeds of faith, love, and kindness in children's hearts.",
   "about.imageAlt": "Portrait of Svetlana Mokan",
   "books.heading": "Published Books",
-  "books.subtitle": "Christian fiction for children and teenagers",
   "books.item1.title": "Not Like Everyone Else",
   "books.item1.description":
     "A large castle, expensive toys, the best teachers… Ten-year-old Eduard has everything anyone could dream of. But behind the high castle walls he desperately lacks the love of those closest to him. He is confined to a wheelchair, his mother barely notices him, and a luxurious life cannot warm a heart that feels alone. Everything changes the day a kind nanny brings her daughter to the castle. The girl cannot see the world with her eyes. And yet she seems to be the first to notice what no one else has: a lonely boy who longs to be loved. Eduard will have to learn what true wealth is, why someone with closed eyes can sometimes see far more than others, and where to find the One who never leaves.",
@@ -178,7 +176,6 @@ const ru: Record<MessageKey, string> = {
     "Я мама троих детей. Живу в солнечной Молдове и пишу христианские книги для детей и подростков.\n\nСоздаю захватывающие истории, которые увлекают читателей, вдохновляют и помогают открывать для себя важные истины.\n\nТакже пишу рассказы для детских лагерей и сценарии рождественских постановок для церкви.\n\nЯ пою в церковном хоре и веду детскую страничку во время воскресных служений. Верю, что через книги можно сеять в сердцах детей семена веры, любви и доброты.",
   "about.imageAlt": "Портрет Светланы Мокан",
   "books.heading": "Опубликованные книги",
-  "books.subtitle": "Христианская проза для детей и подростков",
   "books.item1.title": "«Не такие, как все»",
   "books.item1.description":
     "Большой замок, дорогие игрушки, лучшие учителя… У десятилетнего Эдуарда есть все, о чем можно мечтать. Но за высокими стенами замка ему отчаянно не хватает любви близких. Он прикован к инвалидному креслу, мама почти не замечает его, а роскошная жизнь не может согреть сердце, которое чувствует себя одиноким. Но все меняется в тот день, когда добрая няня приводит в замок свою дочь. Девочка не видит этот мир глазами. Но, кажется, именно она первой замечает то, чего не замечал никто: одинокого мальчика, которому очень хочется быть любимым. Эдуарду предстоит узнать, что такое настоящее богатство, почему иногда человек с закрытыми глазами видит гораздо больше других и где искать Того, Кто никогда не оставляет.",
@@ -260,7 +257,6 @@ const ro: Record<MessageKey, string> = {
     "Sunt mama a trei copii. Locuiesc în însorita Moldovă și scriu cărți creștine pentru copii și adolescenți.\n\nCreez povești captivante care atrag cititorii, îi inspiră și îi ajută să descopere adevăruri importante.\n\nDe asemenea, scriu povestiri pentru tabere de copii și scenarii de piese de Crăciun pentru biserică.\n\nCânt în corul bisericii și conduc pagina copiilor în timpul slujbelor de duminică. Cred că prin cărți putem semăna în inimile copiilor semințe de credință, iubire și bunătate.",
   "about.imageAlt": "Portretul Svetlanei Mokan",
   "books.heading": "Cărți publicate",
-  "books.subtitle": "Proză creștină pentru copii și adolescenți",
   "books.item1.title": "„Nu ca toți ceilalți”",
   "books.item1.description":
     "Un castel mare, jucării scumpe, cei mai buni profesori… Eduard, în vârstă de zece ani, are tot ce și-ar putea dori. Dar în spatele zidurilor înalte ale castelului îi lipsește cu disperare iubirea celor apropiați. Este ținut pe un scaun cu rotile, mama abia îl observă, iar viața de lux nu poate încălzi o inimă care se simte singură. Totul se schimbă în ziua în care o dădacă bună își aduce fiica la castel. Fetița nu vede lumea cu ochii. Și totuși, pare să fie prima care observă ceea ce nimeni altcineva nu văzuse: un băiat singuratic care tânjește să fie iubit. Eduard va trebui să afle ce înseamnă adevărata bogăție, de ce uneori un om cu ochii închiși vede mult mai mult decât alții și unde să-L caute pe Cel care nu părăsește niciodată.",
