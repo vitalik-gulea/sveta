@@ -2,6 +2,7 @@
 
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "@/lib/i18n/locale-provider";
 
@@ -28,7 +29,7 @@ export function Hero() {
   const { t } = useLocale();
 
   return (
-    <div className="relative box-border flex h-screen flex-col items-center justify-center px-4 pb-24 pt-6 text-center sm:px-6 sm:pb-28 sm:pt-10">
+    <div className="relative box-border flex min-h-screen flex-col items-center justify-center px-4 pb-24 pt-24 text-center sm:px-6 sm:pb-28 sm:pt-28">
       <motion.div
         className="flex w-full max-w-3xl flex-col items-center"
         variants={container}
@@ -41,6 +42,19 @@ export function Hero() {
         >
           {t("hero.roleLabel")}
         </motion.p>
+        <motion.div
+          variants={item}
+          className="relative mb-5 size-28 overflow-hidden rounded-full sm:mb-6 sm:size-36 md:size-44"
+        >
+          <Image
+            src="/images/portrait.jpg"
+            alt={t("about.imageAlt")}
+            fill
+            sizes="176px"
+            className="object-contain"
+            priority
+          />
+        </motion.div>
         <motion.h1
           variants={item}
           className="mb-5 max-w-[min(100%,20ch)] px-1 font-serif text-[clamp(1.75rem,8vw,4.5rem)] font-bold leading-[1.1] text-foreground sm:mb-6 sm:max-w-none md:text-6xl md:leading-[1.1] lg:text-7xl"

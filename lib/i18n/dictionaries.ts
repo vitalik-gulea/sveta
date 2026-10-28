@@ -85,7 +85,7 @@ const en: Record<MessageKey, string> = {
   "home.sectionAbout": "About",
   "hero.roleLabel": "Writer",
   "hero.tagline":
-    "Writing books and Christmas plays that speak to children about faith, love, and wonder",
+    "I write Christian books that make children forget about time — and teenagers read even under the blanket with a flashlight.",
   "hero.cta": "My works",
   "hero.scrollAria": "Scroll to the next section",
   "theme.ariaLight": "Switch to light theme",
@@ -93,7 +93,7 @@ const en: Record<MessageKey, string> = {
   "theme.ariaToggle": "Toggle color theme",
   "about.heading": "About Me",
   "about.bio":
-    "I am a mother of three. I live in sunny Moldova and write Christian books for children and teenagers. I create captivating stories that draw readers in, inspire them, and help them discover important truths. I also write stories for children's camps and scripts for Christmas productions for the church. I sing in the church choir and lead the children's page during Sunday services. I believe that through books we can sow seeds of faith, love, and kindness in children's hearts.",
+    "I am a mother of three. I live in sunny Moldova and write Christian books for children and teenagers.\n\nI create captivating stories that draw readers in, inspire them, and help them discover important truths.\n\nI also write stories for children's camps and scripts for Christmas productions for the church.\n\nI sing in the church choir and lead the children's page during Sunday services. I believe that through books we can sow seeds of faith, love, and kindness in children's hearts.",
   "about.imageAlt": "Portrait of Svetlana Mokan",
   "books.heading": "Published Books",
   "books.subtitle": "Christian fiction for children and teenagers",
@@ -167,7 +167,7 @@ const ru: Record<MessageKey, string> = {
   "home.sectionAbout": "Обо мне",
   "hero.roleLabel": "Писатель",
   "hero.tagline":
-    "Пишу книги и рождественские спектакли, которые говорят с детьми о вере, любви и чуде",
+    "Пишу христианские книги, из-за которых дети забывают о времени, а подростки готовы читать даже под одеялом с фонариком.",
   "hero.cta": "Мои работы",
   "hero.scrollAria": "Прокрутить к следующему разделу",
   "theme.ariaLight": "Включить светлую тему",
@@ -175,7 +175,7 @@ const ru: Record<MessageKey, string> = {
   "theme.ariaToggle": "Переключить тему",
   "about.heading": "Обо мне",
   "about.bio":
-    "Я мама троих детей. Живу в солнечной Молдове и пишу христианские книги для детей и подростков. Создаю захватывающие истории, которые увлекают читателей, вдохновляют и помогают открывать для себя важные истины. Также пишу рассказы для детских лагерей и сценарии рождественских постановок для церкви. Я пою в церковном хоре и веду детскую страничку во время воскресных служений. Верю, что через книги можно сеять в сердцах детей семена веры, любви и доброты.",
+    "Я мама троих детей. Живу в солнечной Молдове и пишу христианские книги для детей и подростков.\n\nСоздаю захватывающие истории, которые увлекают читателей, вдохновляют и помогают открывать для себя важные истины.\n\nТакже пишу рассказы для детских лагерей и сценарии рождественских постановок для церкви.\n\nЯ пою в церковном хоре и веду детскую страничку во время воскресных служений. Верю, что через книги можно сеять в сердцах детей семена веры, любви и доброты.",
   "about.imageAlt": "Портрет Светланы Мокан",
   "books.heading": "Опубликованные книги",
   "books.subtitle": "Христианская проза для детей и подростков",
@@ -249,7 +249,7 @@ const ro: Record<MessageKey, string> = {
   "home.sectionAbout": "Despre mine",
   "hero.roleLabel": "Scriitoare",
   "hero.tagline":
-    "Scriu cărți și piese de Crăciun care le vorbesc copiilor despre credință, iubire și minune",
+    "Scriu cărți creștine din cauza cărora copiii uită de timp, iar adolescenții sunt gata să citească chiar și sub pătură, cu lanterna.",
   "hero.cta": "Lucrările mele",
   "hero.scrollAria": "Derulează la secțiunea următoare",
   "theme.ariaLight": "Comută la tema deschisă",
@@ -257,7 +257,7 @@ const ro: Record<MessageKey, string> = {
   "theme.ariaToggle": "Comută tema culorilor",
   "about.heading": "Despre mine",
   "about.bio":
-    "Sunt mama a trei copii. Locuiesc în însorita Moldovă și scriu cărți creștine pentru copii și adolescenți. Creez povești captivante care atrag cititorii, îi inspiră și îi ajută să descopere adevăruri importante. De asemenea, scriu povestiri pentru tabere de copii și scenarii de piese de Crăciun pentru biserică. Cânt în corul bisericii și conduc pagina copiilor în timpul slujbelor de duminică. Cred că prin cărți putem semăna în inimile copiilor semințe de credință, iubire și bunătate.",
+    "Sunt mama a trei copii. Locuiesc în însorita Moldovă și scriu cărți creștine pentru copii și adolescenți.\n\nCreez povești captivante care atrag cititorii, îi inspiră și îi ajută să descopere adevăruri importante.\n\nDe asemenea, scriu povestiri pentru tabere de copii și scenarii de piese de Crăciun pentru biserică.\n\nCânt în corul bisericii și conduc pagina copiilor în timpul slujbelor de duminică. Cred că prin cărți putem semăna în inimile copiilor semințe de credință, iubire și bunătate.",
   "about.imageAlt": "Portretul Svetlanei Mokan",
   "books.heading": "Cărți publicate",
   "books.subtitle": "Proză creștină pentru copii și adolescenți",

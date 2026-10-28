@@ -14,14 +14,14 @@ export function About() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full md:mx-0"
+        className="relative mx-auto aspect-[2/3] w-full max-w-sm overflow-hidden rounded-lg shadow-lg md:mx-0"
       >
         <Image
-          src="/images/about.jpg"
+          src="/images/about-photo.jpg"
           alt={t("about.imageAlt")}
           fill
           sizes="(min-width: 768px) 28rem, 90vw"
-          className="object-contain"
+          className="object-cover object-[center_20%]"
         />
       </motion.div>
 
@@ -36,7 +36,7 @@ export function About() {
           {t("about.heading")}
         </h2>
         <div className="mb-6 h-1 w-20 rounded-full bg-primary" />
-        <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
+        <p className="whitespace-pre-line text-base leading-relaxed text-muted-foreground sm:text-lg">
           {t("about.bio")}
         </p>
       </motion.div>
