@@ -44,13 +44,13 @@ export function Hero() {
         </motion.p>
         <motion.div
           variants={item}
-          className="relative mb-5 size-28 overflow-hidden rounded-full sm:mb-6 sm:size-36 md:size-44"
+          className="relative mb-5 size-40 overflow-hidden rounded-full sm:mb-6 sm:size-44 md:size-48"
         >
           <Image
             src="/images/portrait.jpg"
             alt={t("about.imageAlt")}
             fill
-            sizes="176px"
+            sizes="192px"
             className="object-contain"
             priority
           />
