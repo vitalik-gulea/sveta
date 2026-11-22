@@ -13,7 +13,7 @@ const socialLinks: {
 }[] = [
   {
     key: "social.telegram",
-    href: "https://t.me/+FpWzanyW99JkNjIy",
+    href: "https://t.me/mocansv",
     Icon: TelegramIcon,
   },
   {

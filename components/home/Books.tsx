@@ -12,12 +12,6 @@ const books: {
   imageClass?: string;
 }[] = [
   {
-    titleKey: "books.item5.title",
-    descriptionKey: "books.item5.description",
-    image: "/images/book-5.jpg",
-    imageClass: "object-[center_58%]",
-  },
-  {
     titleKey: "books.item4.title",
     descriptionKey: "books.item4.description",
     image: "/images/book-4.png",
@@ -37,6 +31,12 @@ const books: {
     titleKey: "books.item3.title",
     descriptionKey: "books.item3.description",
     image: "/images/book-3.jpg",
+  },
+  {
+    titleKey: "books.item5.title",
+    descriptionKey: "books.item5.description",
+    image: "/images/book-5.jpg",
+    imageClass: "object-[center_58%]",
   },
 ];
 

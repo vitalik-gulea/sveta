@@ -54,16 +54,16 @@ export type MessageKey =
   | "plays.item5.description"
   | "plays.item6.title"
   | "plays.item6.description"
+  | "plays.readFragment"
+  | "plays.fragmentLabel"
+  | "plays.fragmentRuOnly"
+  | "plays.close"
   | "services.heading"
   | "services.subtitle"
   | "services.item1.title"
   | "services.item1.description"
   | "services.item2.title"
   | "services.item2.description"
-  | "services.item3.title"
-  | "services.item3.description"
-  | "services.item4.title"
-  | "services.item4.description"
   | "footer.contact"
   | "footer.rights"
   | "social.telegram"
@@ -130,20 +130,18 @@ const en: Record<MessageKey, string> = {
   "plays.item6.title": "The Last Lamplighter",
   "plays.item6.description":
     "128 years ago, in the small town of Roten, a lonely lamplighter named Martin lit the street lamps every evening. When electricity comes to town, the old man is seen as obsolete — until one boy starts to wonder why everyone is so unkind to him.",
+  "plays.readFragment": "Read an excerpt",
+  "plays.fragmentLabel": "Excerpt",
+  "plays.fragmentRuOnly": "The excerpt is available in Russian only.",
+  "plays.close": "Close",
   "services.heading": "Services",
   "services.subtitle": "What I can create for you",
-  "services.item1.title": "Custom Poetry",
+  "services.item1.title": "Printed Books",
   "services.item1.description":
-    "Personalized poems for special occasions, events, or personal collections",
-  "services.item2.title": "Screenwriting",
+    "Christian books for children and teenagers. You can order printed editions with worldwide delivery.",
+  "services.item2.title": "Christmas Productions",
   "services.item2.description":
-    "Professional screenplays for film and theater, crafted to your vision",
-  "services.item3.title": "Theatrical Productions",
-  "services.item3.description":
-    "Full play writing and consulting for stage productions",
-  "services.item4.title": "Creative Writing",
-  "services.item4.description":
-    "Short stories, novels, and literary works crafted with care",
+    "Ready-made scripts for churches and children's ministries, or a unique production written from scratch.",
   "footer.contact": "Get in Touch",
   "footer.rights": "All rights reserved.",
   "social.telegram": "Telegram",
@@ -211,20 +209,18 @@ const ru: Record<MessageKey, string> = {
   "plays.item6.title": "«Последний фонарь»",
   "plays.item6.description":
     "128 лет назад в городке Ротен жил одинокий фонарщик Мартин, который каждый вечер зажигал уличные фонари. Когда в город приходит электричество, старика считают ненужным — и лишь один мальчик задаётся вопросом, почему все так безжалостны к доброму человеку.",
+  "plays.readFragment": "Читать фрагмент",
+  "plays.fragmentLabel": "Ознакомительный фрагмент",
+  "plays.fragmentRuOnly": "Фрагмент доступен только на русском языке.",
+  "plays.close": "Закрыть",
   "services.heading": "Услуги",
   "services.subtitle": "Что я могу создать для вас",
-  "services.item1.title": "Стихи на заказ",
+  "services.item1.title": "Печатные книги",
   "services.item1.description":
-    "Персонализированные стихи для особых случаев, мероприятий или личных коллекций",
-  "services.item2.title": "Написание сценариев",
+    "Христианские книги для детей и подростков. Вы можете заказать печатные издания с доставкой по всему миру.",
+  "services.item2.title": "Рождественские постановки",
   "services.item2.description":
-    "Профессиональные сценарии для кино и театра, созданные по вашему видению",
-  "services.item3.title": "Театральные постановки",
-  "services.item3.description":
-    "Полное написание пьес и консультации для сценических представлений",
-  "services.item4.title": "Творческое письмо",
-  "services.item4.description":
-    "Рассказы, романы и литературные произведения, созданные с заботой",
+    "Готовые сценарии для церквей и детских служений или написание уникальной постановки с нуля.",
   "footer.contact": "Связаться",
   "footer.rights": "Все права защищены.",
   "social.telegram": "Telegram",
@@ -292,20 +288,18 @@ const ro: Record<MessageKey, string> = {
   "plays.item6.title": "„Ultimul felinar”",
   "plays.item6.description":
     "Acum 128 de ani, în orășelul Roten, trăia un felinarist singuratic pe nume Martin, care aprindea felinarele străzii în fiecare seară. Când electricitatea ajunge în oraș, bătrânul este considerat inutil — până când un băiat începe să se întrebe de ce toți sunt atât de nemiloși cu el.",
+  "plays.readFragment": "Citește un fragment",
+  "plays.fragmentLabel": "Fragment",
+  "plays.fragmentRuOnly": "Fragmentul este disponibil doar în limba rusă.",
+  "plays.close": "Închide",
   "services.heading": "Servicii",
   "services.subtitle": "Ce pot crea pentru tine",
-  "services.item1.title": "Poezie la comandă",
+  "services.item1.title": "Cărți tipărite",
   "services.item1.description":
-    "Poezii personalizate pentru ocazii speciale, evenimente sau colecții personale",
-  "services.item2.title": "Scenarii",
+    "Cărți creștine pentru copii și adolescenți. Puteți comanda ediții tipărite cu livrare în toată lumea.",
+  "services.item2.title": "Piese de Crăciun",
   "services.item2.description":
-    "Scenarii profesionale pentru film și teatru, create conform viziunii tale",
-  "services.item3.title": "Producții teatrale",
-  "services.item3.description":
-    "Scriere completă de piese și consultanță pentru producții scenice",
-  "services.item4.title": "Scriere creativă",
-  "services.item4.description":
-    "Povestiri, romane și opere literare create cu grijă",
+    "Scenarii gata făcute pentru biserici și lucrarea cu copiii sau o piesă unică scrisă de la zero.",
   "footer.contact": "Contact",
   "footer.rights": "Toate drepturile rezervate.",
   "social.telegram": "Telegram",

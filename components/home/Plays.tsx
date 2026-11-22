@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 import { useLocale } from "@/lib/i18n/locale-provider";
 import type { MessageKey } from "@/lib/i18n/dictionaries";
+import { playFragments } from "@/lib/fragments/plays";
+import { FragmentDialog } from "@/components/home/FragmentDialog";
 
 const plays: {
   titleKey: MessageKey;
@@ -44,6 +47,8 @@ const plays: {
 
 export function Plays() {
   const { t } = useLocale();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const openPlay = openIndex !== null ? plays[openIndex] : null;
 
   return (
     <div className="px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24">
@@ -75,7 +80,7 @@ export function Plays() {
               ease: [0.22, 1, 0.36, 1],
               delay: index * 0.06,
             }}
-            className="overflow-hidden rounded-lg border border-border bg-background shadow-sm"
+            className="flex flex-col overflow-hidden rounded-lg border border-border bg-background shadow-sm"
           >
             <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
@@ -86,17 +91,32 @@ export function Plays() {
                 className="object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-            <div className="px-5 py-6 sm:px-6">
+            <div className="flex flex-1 flex-col px-5 py-6 sm:px-6">
               <h3 className="mb-2 font-serif text-lg font-semibold text-foreground sm:text-xl">
                 {t(play.titleKey)}
               </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
+              <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
                 {t(play.descriptionKey)}
               </p>
+              {playFragments[index] && (
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(index)}
+                  className="mt-auto self-start rounded-full border border-primary px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+                >
+                  {t("plays.readFragment")}
+                </button>
+              )}
             </div>
           </motion.div>
         ))}
       </div>
+
+      <FragmentDialog
+        title={openPlay ? t(openPlay.titleKey) : null}
+        text={openIndex !== null ? playFragments[openIndex] ?? null : null}
+        onClose={() => setOpenIndex(null)}
+      />
     </div>
   );
 }

@@ -6,8 +6,6 @@ import { useLocale } from "@/lib/i18n/locale-provider";
 import type { MessageKey } from "@/lib/i18n/dictionaries";
 import {
   CreativeWritingIcon,
-  CustomPoetryIcon,
-  ScreenwritingIcon,
   TheatricalProductionsIcon,
 } from "@/components/icons/ServiceIcons";
 
@@ -19,22 +17,12 @@ const services: {
   {
     titleKey: "services.item1.title",
     descriptionKey: "services.item1.description",
-    Icon: CustomPoetryIcon,
+    Icon: CreativeWritingIcon,
   },
   {
     titleKey: "services.item2.title",
     descriptionKey: "services.item2.description",
-    Icon: ScreenwritingIcon,
-  },
-  {
-    titleKey: "services.item3.title",
-    descriptionKey: "services.item3.description",
     Icon: TheatricalProductionsIcon,
-  },
-  {
-    titleKey: "services.item4.title",
-    descriptionKey: "services.item4.description",
-    Icon: CreativeWritingIcon,
   },
 ];
 
@@ -59,7 +47,7 @@ export function Services() {
         </p>
       </motion.div>
 
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
         {services.map(({ titleKey, descriptionKey, Icon }, index) => (
           <motion.div
             key={titleKey}
