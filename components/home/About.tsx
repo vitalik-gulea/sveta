@@ -22,7 +22,6 @@ export function About() {
           fill
           sizes="(min-width: 768px) 28rem, 90vw"
           className="object-cover object-[center_20%]"
-          unoptimized
         />
       </motion.div>
 
